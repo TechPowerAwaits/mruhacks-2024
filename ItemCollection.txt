@@ -1,0 +1,52 @@
+Water bottle
+It is better to keep hydrated after all.
+
+Broom
+Cleaning the house is probably a good idea.
+
+Deodorant
+Freshening yourself up might give a better first impression to others.
+
+Backpack
+Now that you have everything, you are finally ready for school!
+
+Paper
+Something to write on would be good for note-taking.
+
+Laptop
+This might be useful for keeping track of all of my homework.
+
+Book
+Reading this once in a while might help keep you on top of things.
+
+Pen
+This will be good to write in all of your notes.
+
+Diploma
+Finally, you're ready to graduate after all of your hard work!
+
+Folder
+This will be very useful to keep all of your paperwork organized and in one place.
+
+Money
+Perhaps this is your payment from your boss, though it is a bit strange it's not a cheque.
+
+Coffee
+Drinking this will surely help keep you awake and focused.
+
+Calendar
+Using this to note down all the deadline dates will be important later on.
+
+Watch
+You can use this to keep track of the time and make sure you're on top of things.
+
+Fishbowl
+You remember the boss wanting you to keep them well fed and it might be good to stay on her good side.
+
+Trophy
+After all of you dedication and hard work, the boss finally see you fit for a promotion!
+
+Optional dialogue for later
+This room looks like it's locked. Perhaps it will open up later.
+Before you can leave, you must make sure you are well prepared.
+Perhaps you might be able to find something else?

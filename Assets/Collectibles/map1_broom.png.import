@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cydvxbang7kl8"
-path="res://.godot/imported/player_lvl_1.png-2fbb8d1ea1a9c4433afd749421170897.ctex"
+uid="uid://cj3ohxr5ap4qm"
+path="res://.godot/imported/map1_broom.png-20d44f7c72d82ee7ec7c86cedd8a39f8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/player_lvl_1.png"
-dest_files=["res://.godot/imported/player_lvl_1.png-2fbb8d1ea1a9c4433afd749421170897.ctex"]
+source_file="res://Assets/Collectibles/map1_broom.png"
+dest_files=["res://.godot/imported/map1_broom.png-20d44f7c72d82ee7ec7c86cedd8a39f8.ctex"]
 
 [params]
 

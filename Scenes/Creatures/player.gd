@@ -1,7 +1,10 @@
 extends CharacterBody2D
 
-const L1_IMAGE: Texture = preload("res://Assets/Level1/player lvl 1.png")
+const L1_IMAGE: Texture = preload("res://Assets/level1/player_lvl_1.png")
 const FALLBACK_IMAGE: Texture = preload("res://Assets/Level1/Player.png")
+
+var _min_bounds := Vector2.ZERO
+var _max_bounds := Vector2.ZERO
 
 
 enum PlayerType {
@@ -29,8 +32,17 @@ func _physics_process(_delta: float) -> void:
 	if Input.is_action_pressed("Move right"):
 		x_modifier += cell_size
 	
-	position.x += x_modifier
-	position.y += y_modifier
+	var future_pos := Vector2(position.x + x_modifier, position.y + y_modifier)
+	
+	if not (future_pos.x > _max_bounds.x or future_pos.x < _min_bounds.x):
+		position.x += x_modifier
+	if not (future_pos.y > _max_bounds.y or future_pos.y < _min_bounds.y):
+		position.y += y_modifier
+
+
+func set_bounds(min_pos: Vector2, max_pos: Vector2) -> void:
+	_min_bounds = min_pos
+	_max_bounds = max_pos
 
 
 func set_player_state(value: PlayerType) -> void:

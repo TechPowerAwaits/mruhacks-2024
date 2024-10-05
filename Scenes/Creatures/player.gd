@@ -19,6 +19,11 @@ enum PlayerType {
 	set = set_player_state
 
 
+func _ready() -> void:
+	# Ensure that the player sprite represents the player state.
+	set_player_state(player_state)
+
+
 func _physics_process(_delta: float) -> void:
 	var x_modifier := 0
 	var y_modifier := 0

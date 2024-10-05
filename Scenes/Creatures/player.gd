@@ -17,7 +17,6 @@ enum PlayerType {
 
 
 func _physics_process(_delta: float) -> void:
-	pass
 	var x_modifier := 0
 	var y_modifier := 0
 	
@@ -43,4 +42,4 @@ func set_player_state(value: PlayerType) -> void:
 
 
 func get_player_state() -> PlayerType:
-	return 0
+	return player_state

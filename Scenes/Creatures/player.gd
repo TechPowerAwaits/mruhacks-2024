@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-const L1_IMAGE: Texture = preload("res://Assets/level1/player_lvl_1.png")
+const L1_IMAGE: Texture = preload("res://Assets/Level1/player_lvl_1.png")
 const FALLBACK_IMAGE: Texture = preload("res://Assets/Level1/Player.png")
 
 var _min_bounds := Vector2.ZERO
@@ -17,6 +17,11 @@ enum PlayerType {
 @export var player_state := PlayerType.LEVEL1:
 	get = get_player_state,
 	set = set_player_state
+
+
+func _ready() -> void:
+	# Ensure that the player sprite represents the player state.
+	set_player_state(player_state)
 
 
 func _physics_process(_delta: float) -> void:
@@ -51,6 +56,7 @@ func set_player_state(value: PlayerType) -> void:
 			$Sprite2D.texture = L1_IMAGE
 		_:
 			$Sprite2D.texture = FALLBACK_IMAGE
+	player_state = value
 
 
 func get_player_state() -> PlayerType:

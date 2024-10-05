@@ -18,25 +18,25 @@ enum PlayerType {
 
 func _physics_process(_delta: float) -> void:
 	pass
-	#var x_modifier := 0
-	#var y_modifier := 0
+	var x_modifier := 0
+	var y_modifier := 0
 	
-	#if Input.is_action_pressed("Move down"):
-	#	y_modifier += cell_size
-	#if Input.is_action_pressed("Move up"):
-	#	y_modifier += -cell_size
-	#if Input.is_action_pressed("Move left"):
-	#	x_modifier += -cell_size
-	#if Input.is_action_pressed("Move right"):
-	#	x_modifier += cell_size
+	if Input.is_action_pressed("Move down"):
+		y_modifier += cell_size
+	if Input.is_action_pressed("Move up"):
+		y_modifier += -cell_size
+	if Input.is_action_pressed("Move left"):
+		x_modifier += -cell_size
+	if Input.is_action_pressed("Move right"):
+		x_modifier += cell_size
 	
-	#position.x += x_modifier
-	#position.y += y_modifier
+	position.x += x_modifier
+	position.y += y_modifier
 
 
 func set_player_state(value: PlayerType) -> void:
 	match value:
-		LEVEL1:
+		PlayerType.LEVEL1:
 			$Sprite2D.texture = L1_IMAGE
 		_:
 			$Sprite2D.texture = FALLBACK_IMAGE

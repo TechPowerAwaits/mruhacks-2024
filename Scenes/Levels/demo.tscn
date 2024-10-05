@@ -15,3 +15,5 @@ tile_map_data = PackedByteArray("AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAACAAAAAAAAAAA
 tile_set = SubResource("TileSet_jrhff")
 
 [node name="Player" parent="." instance=ExtResource("1_wnhto")]
+cell_size = 16
+player_state = 0

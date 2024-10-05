@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://dbpd4diawgdyq"]
+
+[ext_resource type="PackedScene" uid="uid://bkek5qjnwv34y" path="res://Scenes/Creatures/Player.tscn" id="1_wnhto"]
+
+[sub_resource type="TileSet" id="TileSet_jrhff"]
+
+[node name="Demo" type="TileMapLayer"]
+tile_set = SubResource("TileSet_jrhff")
+
+[node name="Player" parent="." instance=ExtResource("1_wnhto")]

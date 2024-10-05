@@ -1,8 +1,8 @@
 [gd_scene load_steps=8 format=4 uid="uid://dbpd4diawgdyq"]
 
-[ext_resource type="Texture2D" uid="uid://4k7ntidtnscm" path="res://Assets/L1_Tile.png" id="1_pmov1"]
+[ext_resource type="Texture2D" uid="uid://4k7ntidtnscm" path="res://Assets/Level1/L1_Tile.png" id="1_pmov1"]
 [ext_resource type="PackedScene" uid="uid://bkek5qjnwv34y" path="res://Scenes/Creatures/Player.tscn" id="1_wnhto"]
-[ext_resource type="Texture2D" uid="uid://c3khhpiklbq0g" path="res://Assets/Demo Brick.png" id="2_oy4a7"]
+[ext_resource type="Texture2D" uid="uid://c3khhpiklbq0g" path="res://Assets/Level1/Demo Brick.png" id="2_oy4a7"]
 [ext_resource type="Script" path="res://Scenes/Levels/demo.gd" id="3_3vj81"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_x1l06"]

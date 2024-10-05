@@ -56,6 +56,7 @@ func set_player_state(value: PlayerType) -> void:
 			$Sprite2D.texture = L1_IMAGE
 		_:
 			$Sprite2D.texture = FALLBACK_IMAGE
+	player_state = value
 
 
 func get_player_state() -> PlayerType:

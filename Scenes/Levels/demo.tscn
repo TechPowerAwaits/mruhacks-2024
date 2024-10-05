@@ -1,10 +1,17 @@
-[gd_scene load_steps=3 format=3 uid="uid://dbpd4diawgdyq"]
+[gd_scene load_steps=5 format=4 uid="uid://dbpd4diawgdyq"]
 
+[ext_resource type="Texture2D" uid="uid://4k7ntidtnscm" path="res://Assets/L1_Tile.png" id="1_pmov1"]
 [ext_resource type="PackedScene" uid="uid://bkek5qjnwv34y" path="res://Scenes/Creatures/Player.tscn" id="1_wnhto"]
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_x1l06"]
+texture = ExtResource("1_pmov1")
+0:0/0 = 0
+
 [sub_resource type="TileSet" id="TileSet_jrhff"]
+sources/0 = SubResource("TileSetAtlasSource_x1l06")
 
 [node name="Demo" type="TileMapLayer"]
+tile_map_data = PackedByteArray("AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAACAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAABAAEAAAAAAAAAAAACAAEAAAAAAAAAAAADAAEAAAAAAAAAAAAEAAEAAAAAAAAAAAABAAIAAAAAAAAAAAACAAIAAAAAAAAAAAADAAIAAAAAAAAAAAAEAAIAAAAAAAAAAAACAAMAAAAAAAAAAAADAAMAAAAAAAAAAAAEAAMAAAAAAAAAAAADAAQAAAAAAAAAAAAEAAQAAAAAAAAAAAAEAAUAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_jrhff")
 
 [node name="Player" parent="." instance=ExtResource("1_wnhto")]

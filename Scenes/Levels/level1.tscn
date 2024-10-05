@@ -1,0 +1,27 @@
+[gd_scene load_steps=8 format=4 uid="uid://dg2i5wcf6i1th"]
+
+[ext_resource type="Texture2D" uid="uid://4k7ntidtnscm" path="res://Assets/Level1/L1_Tile.png" id="1_8j6sm"]
+[ext_resource type="Texture2D" uid="uid://c3khhpiklbq0g" path="res://Assets/Level1/Demo Brick.png" id="2_gyo5g"]
+[ext_resource type="Script" path="res://Scenes/Levels/demo.gd" id="3_qqvmj"]
+[ext_resource type="PackedScene" uid="uid://bkek5qjnwv34y" path="res://Scenes/Creatures/Player.tscn" id="4_tmh0t"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_x1l06"]
+texture = ExtResource("1_8j6sm")
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ubykq"]
+texture = ExtResource("2_gyo5g")
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_jrhff"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_x1l06")
+sources/1 = SubResource("TileSetAtlasSource_ubykq")
+
+[node name="Demo" type="TileMapLayer"]
+tile_map_data = PackedByteArray("AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAACAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAABAAEAAAAAAAAAAAACAAEAAAAAAAAAAAADAAEAAAAAAAAAAAAEAAEAAAAAAAAAAAABAAIAAAAAAAAAAAACAAIAAAAAAAAAAAADAAIAAAAAAAAAAAAEAAIAAAAAAAAAAAACAAMAAAAAAAAAAAADAAMAAAAAAAAAAAAEAAMAAAAAAAAAAAADAAQAAAAAAAAAAAAEAAQAAAAAAAAAAAAEAAUAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAMAAAAAAAAAAAABAAMAAAAAAAAAAAACAAQAAAAAAAAAAAABAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAUAAAAAAAAAAAACAAUAAAAAAAAAAAABAAUAAAAAAAAAAAADAAUAAAAAAAAAAAA=")
+tile_set = SubResource("TileSet_jrhff")
+script = ExtResource("3_qqvmj")
+max_pos = Vector2(64, 80)
+
+[node name="Player" parent="." instance=ExtResource("4_tmh0t")]

@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
-const L1_IMAGE: Texture = preload("res://Assets/player_lvl_1.png")
-const FALLBACK_IMAGE: Texture = preload("res://Assets/Player.png")
+const L1_IMAGE: Texture = preload("res://Assets/level1/player_lvl_1.png")
+const FALLBACK_IMAGE: Texture = preload("res://Assets/Level1/Player.png")
 
 var _min_bounds := Vector2.ZERO
 var _max_bounds := Vector2.ZERO

@@ -11,13 +11,14 @@ config_version=5
 [application]
 
 config/name="Placeholder"
+run/main_scene="res://Scenes/Menu.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [display]
 
-window/size/viewport_width=144
-window/size/viewport_height=176
+window/size/viewport_width=1632
+window/size/viewport_height=896
 window/size/resizable=false
 
 [rendering]

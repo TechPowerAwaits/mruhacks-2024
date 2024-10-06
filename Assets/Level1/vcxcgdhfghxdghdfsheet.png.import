@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://brax3y4pj6oy"
-path="res://.godot/imported/spritewalking2.png-833e9f257eef26130e971e6ed1c146a7.ctex"
+uid="uid://b7b2hcqek14ha"
+path="res://.godot/imported/vcxcgdhfghxdghdfsheet.png-449ab17bf7af95b5d209ee45b71cb46e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Level 2/spritewalking2.png"
-dest_files=["res://.godot/imported/spritewalking2.png-833e9f257eef26130e971e6ed1c146a7.ctex"]
+source_file="res://Assets/Level1/vcxcgdhfghxdghdfsheet.png"
+dest_files=["res://.godot/imported/vcxcgdhfghxdghdfsheet.png-449ab17bf7af95b5d209ee45b71cb46e.ctex"]
 
 [params]
 

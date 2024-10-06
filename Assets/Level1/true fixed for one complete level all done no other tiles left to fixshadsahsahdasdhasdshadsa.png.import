@@ -2,17 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-
-uid="uid://cwtyph7clvlir"
-path="res://.godot/imported/spritewalking3.png-1b7dcec5391d2ed11364c00e5c4a57af.ctex"
+uid="uid://4gwkw2cpd248"
+path="res://.godot/imported/true fixed for one complete level all done no other tiles left to fixshadsahsahdasdhasdshadsa.png-941fff3bcec87aa2bb288e7dcb61e4bc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Level 3/spritewalking3.png"
-dest_files=["res://.godot/imported/spritewalking3.png-1b7dcec5391d2ed11364c00e5c4a57af.ctex"]
+source_file="res://Assets/Level1/true fixed for one complete level all done no other tiles left to fixshadsahsahdasdhasdshadsa.png"
+dest_files=["res://.godot/imported/true fixed for one complete level all done no other tiles left to fixshadsahsahdasdhasdshadsa.png-941fff3bcec87aa2bb288e7dcb61e4bc.ctex"]
 
 [params]
 

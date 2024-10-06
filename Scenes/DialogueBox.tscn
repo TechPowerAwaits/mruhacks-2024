@@ -2,16 +2,14 @@
 
 [ext_resource type="Script" path="res://Scenes/DialogueBox.gd" id="1_0ii2g"]
 
-[node name="CanvasLayer" type="CanvasLayer"]
-
-[node name="DialogueBox" type="Panel" parent="."]
+[node name="DialogueBox" type="Panel"]
 offset_left = 102.0
 offset_top = 448.0
 offset_right = 1552.0
 offset_bottom = 863.0
 script = ExtResource("1_0ii2g")
 
-[node name="DialogueText" type="RichTextLabel" parent="DialogueBox"]
+[node name="DialogueText" type="RichTextLabel" parent="."]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
@@ -23,7 +21,7 @@ offset_bottom = -59.125
 theme_override_font_sizes/normal_font_size = 50
 text = "Here is where the NPC dialogue would go."
 
-[node name="TalkButton" type="Button" parent="DialogueBox"]
+[node name="TalkButton" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.006
@@ -35,7 +33,7 @@ offset_bottom = -29.945
 theme_override_font_sizes/font_size = 50
 text = "Next"
 
-[node name="LeaveButton" type="Button" parent="DialogueBox"]
+[node name="LeaveButton" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
@@ -47,5 +45,5 @@ offset_bottom = -29.945
 theme_override_font_sizes/font_size = 50
 text = "Leave"
 
-[connection signal="pressed" from="DialogueBox/TalkButton" to="DialogueBox" method="_on_talk_button_pressed"]
-[connection signal="pressed" from="DialogueBox/LeaveButton" to="DialogueBox" method="_on_leave_button_pressed"]
+[connection signal="pressed" from="TalkButton" to="." method="_on_talk_button_pressed"]
+[connection signal="pressed" from="LeaveButton" to="." method="_on_leave_button_pressed"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=3 uid="uid://cjxap77btrhgq"]
+[gd_scene load_steps=33 format=3 uid="uid://dqirn10fugo1"]
 
 [ext_resource type="Texture2D" uid="uid://ke5hvhiyuajr" path="res://Assets/Collectibles/map1_collectibles_animated.png" id="1_aig02"]
 [ext_resource type="Script" path="res://Scenes/collectible.gd" id="1_l1n1e"]
@@ -284,7 +284,7 @@ script = ExtResource("1_l1n1e")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_85ili")
-animation = &"diploma"
+animation = &"clock"
 centered = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

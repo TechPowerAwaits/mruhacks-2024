@@ -25,19 +25,24 @@ animations = [{
 "speed": 2.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_yxine"]
-radius = 6.0
-height = 16.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x417o"]
+size = Vector2(12, 16)
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_tcq4l")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(-2, -1)
+position = Vector2(-2, 0)
 sprite_frames = SubResource("SpriteFrames_iqecn")
 animation = &"level1"
 centered = false
 
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(6, 6)
+zoom = Vector2(16, 16)
+position_smoothing_enabled = true
+position_smoothing_speed = 10.0
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(6, 8)
-shape = SubResource("CapsuleShape2D_yxine")
+shape = SubResource("RectangleShape2D_x417o")

@@ -173,7 +173,7 @@ sources/3 = SubResource("TileSetAtlasSource_2ybvk")
 sources/0 = SubResource("TileSetAtlasSource_8443b")
 sources/5 = SubResource("TileSetAtlasSource_2g8xj")
 
-[node name="Control" type="Control"]
+[node name="Control3" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0

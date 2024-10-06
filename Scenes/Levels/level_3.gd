@@ -13,7 +13,6 @@ var items_collected := false
 
 
 func _ready() -> void:
-	_on_dialogue_box_dialogue_closed()
 	$Level3.hide()
 	$Level3/Player.set_bounds(min_pos, max_pos)
 	$Level3/Player.disable()

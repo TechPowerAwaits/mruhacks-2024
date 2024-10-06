@@ -1,4 +1,4 @@
-[gd_scene load_steps=49 format=3 uid="uid://cjxap77btrhgq"]
+[gd_scene load_steps=52 format=3 uid="uid://cjxap77btrhgq"]
 
 [ext_resource type="Texture2D" uid="uid://ke5hvhiyuajr" path="res://Assets/Collectibles/map1_collectibles_animated.png" id="1_aig02"]
 [ext_resource type="Script" path="res://Scenes/collectible.gd" id="1_l1n1e"]
@@ -100,6 +100,18 @@ region = Rect2(16, 16, 16, 16)
 [sub_resource type="AtlasTexture" id="AtlasTexture_pn7o7"]
 atlas = ExtResource("2_tgnu8")
 region = Rect2(32, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jk8eu"]
+atlas = ExtResource("4_agqs7")
+region = Rect2(0, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rl2w7"]
+atlas = ExtResource("4_agqs7")
+region = Rect2(16, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_24ixd"]
+atlas = ExtResource("4_agqs7")
+region = Rect2(32, 48, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_i6dwb"]
 atlas = ExtResource("4_agqs7")
@@ -287,7 +299,16 @@ animations = [{
 "name": &"diploma",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jk8eu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rl2w7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_24ixd")
+}],
 "loop": true,
 "name": &"fishbowl",
 "speed": 5.0
@@ -390,7 +411,7 @@ script = ExtResource("1_l1n1e")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_85ili")
-animation = &"clock"
+animation = &"fishbowl"
 centered = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

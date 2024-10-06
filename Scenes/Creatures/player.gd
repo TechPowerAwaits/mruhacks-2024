@@ -74,8 +74,9 @@ func _physics_process(_delta: float) -> void:
 		var collision_info := get_last_slide_collision()
 		if collision_info != null:
 			var collider := collision_info.get_collider()
-			if collider is NPC:
+			if collider is NPC and not collider.has_meta("visited"):
 				print("Hi NPC")
+				collider.set_meta("visited", true)
 
 
 func set_bounds(min_pos: Vector2, max_pos: Vector2) -> void:

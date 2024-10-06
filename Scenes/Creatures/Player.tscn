@@ -1,7 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://bkek5qjnwv34y"]
+[gd_scene load_steps=13 format=3 uid="uid://bkek5qjnwv34y"]
 
 [ext_resource type="Script" path="res://Scenes/Creatures/player.gd" id="1_tcq4l"]
 [ext_resource type="Texture2D" uid="uid://dpxegcjqwoh4c" path="res://Assets/Level1/spritewalking.png" id="2_6c0dt"]
+[ext_resource type="Texture2D" uid="uid://brax3y4pj6oy" path="res://Assets/Level 2/spritewalking2.png" id="3_6io8e"]
+[ext_resource type="Texture2D" uid="uid://cwtyph7clvlir" path="res://Assets/Level 3/spritewalking3.png" id="4_h7agd"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_82o2f"]
 atlas = ExtResource("2_6c0dt")
@@ -10,6 +12,22 @@ region = Rect2(16, 0, 16, 16)
 [sub_resource type="AtlasTexture" id="AtlasTexture_8b53i"]
 atlas = ExtResource("2_6c0dt")
 region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fvaat"]
+atlas = ExtResource("3_6io8e")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qfr71"]
+atlas = ExtResource("3_6io8e")
+region = Rect2(0, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u6osc"]
+atlas = ExtResource("4_h7agd")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5fwn3"]
+atlas = ExtResource("4_h7agd")
+region = Rect2(0, 16, 16, 16)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_iqecn"]
 animations = [{
@@ -23,6 +41,28 @@ animations = [{
 "loop": true,
 "name": &"level1",
 "speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fvaat")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qfr71")
+}],
+"loop": true,
+"name": &"level2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u6osc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5fwn3")
+}],
+"loop": true,
+"name": &"level3",
+"speed": 5.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x417o"]
@@ -34,7 +74,7 @@ script = ExtResource("1_tcq4l")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(-2, 0)
 sprite_frames = SubResource("SpriteFrames_iqecn")
-animation = &"level1"
+animation = &"level3"
 centered = false
 
 [node name="Camera2D" type="Camera2D" parent="."]

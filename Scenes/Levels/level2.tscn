@@ -1,4 +1,5 @@
-[gd_scene load_steps=20 format=4 uid="uid://c6tpbocc4rf0q"]
+[gd_scene load_steps=21 format=4 uid="uid://c6tpbocc4rf0q"]
+
 [ext_resource type="Texture2D" uid="uid://d0amyssi8w27m" path="res://Assets/Level 2/sprite_sheet_lvl_2_cmp.png" id="1_2ooms"]
 [ext_resource type="Script" path="res://Scenes/Levels/level_2.gd" id="1_ej2n5"]
 [ext_resource type="Texture2D" uid="uid://c3khhpiklbq0g" path="res://Assets/Level1/Demo Brick.png" id="1_r00rc"]
@@ -212,7 +213,7 @@ tile_set = SubResource("TileSet_jrhff")
 
 [node name="Player" parent="Level2" instance=ExtResource("1_ti41k")]
 position = Vector2(93, 63)
-player_state = 1
+player_state = 2
 
 [node name="CollectibleManager" type="Node" parent="Level2"]
 script = ExtResource("7_gisdp")

@@ -82,6 +82,10 @@ func set_player_state(value: PlayerType) -> void:
 	match value:
 		PlayerType.LEVEL1:
 			$AnimatedSprite2D.play("level1")
+		PlayerType.LEVEL2:
+			$AnimatedSprite2D.play("level2")
+		PlayerType.LEVEL3:
+			$AnimatedSprite2D.play("level3")
 	player_state = value
 
 

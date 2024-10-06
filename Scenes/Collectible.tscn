@@ -432,7 +432,8 @@ script = ExtResource("1_l1n1e")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_85ili")
-animation = &"trophy"
+animation = &"clock"
+
 centered = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

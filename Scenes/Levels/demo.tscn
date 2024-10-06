@@ -4,7 +4,6 @@
 [ext_resource type="PackedScene" uid="uid://bkek5qjnwv34y" path="res://Scenes/Creatures/Player.tscn" id="1_wnhto"]
 [ext_resource type="Texture2D" uid="uid://c3khhpiklbq0g" path="res://Assets/Level1/Demo Brick.png" id="2_oy4a7"]
 [ext_resource type="Script" path="res://Scenes/Levels/demo.gd" id="3_3vj81"]
-
 [ext_resource type="PackedScene" uid="uid://cjxap77btrhgq" path="res://Scenes/Collectible.tscn" id="5_0k461"]
 [ext_resource type="Script" path="res://Scenes/CollectibleManager.gd" id="5_b407t"]
 

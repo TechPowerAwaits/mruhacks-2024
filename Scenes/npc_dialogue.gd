@@ -34,3 +34,4 @@ func list_gen(file: FileAccess) -> Array:
 		
 func _on_done_button_pressed() -> void:
 	emit_signal("dialogue_closed")
+	hide()

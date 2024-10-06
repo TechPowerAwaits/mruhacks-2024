@@ -1,6 +1,10 @@
 class_name Player
 extends CharacterBody2D
 
+# We know that conversation is unused within script.
+@warning_ignore("UNUSED_SIGNAL")
+signal conversation
+
 const L1_IMAGE: Texture = preload("res://Assets/Level1/player_lvl_1.png")
 const FALLBACK_IMAGE: Texture = preload("res://Assets/Level1/Player.png")
 
@@ -75,7 +79,7 @@ func _physics_process(_delta: float) -> void:
 		if collision_info != null:
 			var collider := collision_info.get_collider()
 			if collider is NPC and not collider.has_meta("visited"):
-				print("Hi NPC")
+				emit_signal("conversation")
 				collider.set_meta("visited", true)
 
 

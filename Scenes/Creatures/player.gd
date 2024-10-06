@@ -17,6 +17,7 @@ enum PlayerType {
 @export var player_state := PlayerType.LEVEL1:
 	get = get_player_state,
 	set = set_player_state
+@export var speed := 64
 
 
 func _ready() -> void:
@@ -25,24 +26,31 @@ func _ready() -> void:
 
 
 func _physics_process(_delta: float) -> void:
+	if position.x > _max_bounds.x:
+		position.x = _max_bounds.x
+	elif position.x < _min_bounds.x:
+		position.x = _min_bounds.x
+	
+	if position.y > _max_bounds.y:
+		position.y = _max_bounds.y
+	elif position.y < _min_bounds.y:
+		position.y = _min_bounds.y
+
 	var x_modifier := 0
 	var y_modifier := 0
 	
 	if Input.is_action_pressed("Move down"):
-		y_modifier += cell_size
+		y_modifier += speed
 	if Input.is_action_pressed("Move up"):
-		y_modifier += -cell_size
+		y_modifier += -speed
 	if Input.is_action_pressed("Move left"):
-		x_modifier += -cell_size
+		x_modifier += -speed
 	if Input.is_action_pressed("Move right"):
-		x_modifier += cell_size
+		x_modifier += speed
 	
-	var future_pos := Vector2(position.x + x_modifier, position.y + y_modifier)
-	
-	if not (future_pos.x > _max_bounds.x or future_pos.x < _min_bounds.x):
-		position.x += x_modifier
-	if not (future_pos.y > _max_bounds.y or future_pos.y < _min_bounds.y):
-		position.y += y_modifier
+	velocity.x = x_modifier
+	velocity.y = y_modifier
+	move_and_slide()
 
 
 func set_bounds(min_pos: Vector2, max_pos: Vector2) -> void:

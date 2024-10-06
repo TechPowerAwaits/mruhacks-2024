@@ -1,0 +1,98 @@
+[gd_scene load_steps=3 format=3 uid="uid://cjxap77btrhgq"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_85ili"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"backpack",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"books",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"broom",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"calendar",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"clock",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"coffee",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"deodorant",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"diploma",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"fishbowl",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"folder",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"laptop",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"money",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"paper",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"pen",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"trophy",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"water bottle",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_45ahq"]
+size = Vector2(16, 16)
+
+[node name="Collectible" type="Area2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_85ili")
+animation = &"water bottle"
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(8, 10)
+shape = SubResource("RectangleShape2D_45ahq")

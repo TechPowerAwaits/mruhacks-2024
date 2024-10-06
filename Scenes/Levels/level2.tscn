@@ -224,4 +224,5 @@ type = "laptop"
 position = Vector2(293, 372)
 type = "paper"
 
+[connection signal="dialogue_closed" from="DialogueBox" to="." method="_on_dialogue_box_dialogue_closed"]
 [connection signal="all_collected" from="Level2/CollectibleManager" to="." method="_on_collectible_manager_all_collected"]

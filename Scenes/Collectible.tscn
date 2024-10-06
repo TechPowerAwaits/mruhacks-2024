@@ -1,8 +1,9 @@
-[gd_scene load_steps=33 format=3 uid="uid://cjxap77btrhgq"]
+[gd_scene load_steps=37 format=3 uid="uid://cjxap77btrhgq"]
 
 [ext_resource type="Texture2D" uid="uid://ke5hvhiyuajr" path="res://Assets/Collectibles/map1_collectibles_animated.png" id="1_aig02"]
 [ext_resource type="Script" path="res://Scenes/collectible.gd" id="1_l1n1e"]
 [ext_resource type="Texture2D" uid="uid://c02kv71n23hym" path="res://Assets/Collectibles/map2_collectibles_animated.png" id="2_tgnu8"]
+[ext_resource type="Texture2D" uid="uid://8g0e2skyoytg" path="res://Assets/Collectibles/map3_collectibles_animated.png" id="4_agqs7"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0haxo"]
 atlas = ExtResource("1_aig02")
@@ -63,6 +64,18 @@ region = Rect2(16, 16, 16, 16)
 [sub_resource type="AtlasTexture" id="AtlasTexture_pn7o7"]
 atlas = ExtResource("2_tgnu8")
 region = Rect2(32, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i6dwb"]
+atlas = ExtResource("4_agqs7")
+region = Rect2(0, 64, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iyty3"]
+atlas = ExtResource("4_agqs7")
+region = Rect2(16, 64, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8gyvu"]
+atlas = ExtResource("4_agqs7")
+region = Rect2(32, 64, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_uxs8o"]
 atlas = ExtResource("2_tgnu8")
@@ -204,7 +217,16 @@ animations = [{
 "name": &"fishbowl",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i6dwb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iyty3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8gyvu")
+}],
 "loop": true,
 "name": &"folder",
 "speed": 5.0
@@ -284,7 +306,7 @@ script = ExtResource("1_l1n1e")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_85ili")
-animation = &"diploma"
+animation = &"folder"
 centered = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

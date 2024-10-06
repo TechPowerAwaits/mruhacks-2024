@@ -1,0 +1,51 @@
+[gd_scene load_steps=2 format=3 uid="uid://bs2u7psg3f1xs"]
+
+[ext_resource type="Script" path="res://Scenes/DialogueBox.gd" id="1_0ii2g"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="DialogueBox" type="Panel" parent="."]
+offset_left = 102.0
+offset_top = 448.0
+offset_right = 1552.0
+offset_bottom = 863.0
+script = ExtResource("1_0ii2g")
+
+[node name="DialogueText" type="RichTextLabel" parent="DialogueBox"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.875
+offset_left = 98.0
+offset_top = 56.0
+offset_right = -128.0
+offset_bottom = -59.125
+theme_override_font_sizes/normal_font_size = 50
+text = "Here is where the NPC dialogue would go."
+
+[node name="TalkButton" type="Button" parent="DialogueBox"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.006
+anchor_bottom = 0.983
+offset_left = 1050.0
+offset_top = 287.0
+offset_right = -232.7
+offset_bottom = -29.945
+theme_override_font_sizes/font_size = 50
+text = "Next"
+
+[node name="LeaveButton" type="Button" parent="DialogueBox"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.983
+offset_left = 1250.0
+offset_top = 287.0
+offset_right = -32.0
+offset_bottom = -29.945
+theme_override_font_sizes/font_size = 50
+text = "Leave"
+
+[connection signal="pressed" from="DialogueBox/TalkButton" to="DialogueBox" method="_on_talk_button_pressed"]
+[connection signal="pressed" from="DialogueBox/LeaveButton" to="DialogueBox" method="_on_leave_button_pressed"]

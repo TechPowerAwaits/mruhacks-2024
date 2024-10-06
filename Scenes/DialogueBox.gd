@@ -1,7 +1,6 @@
 extends Panel
 
-const DIALOGUE_LINES := 5
-const DIALOGUE_FILE := "res://Dialogue.txt"
+signal dialogue_closed
 
 var text_file: FileAccess = null
 var counter := 1
@@ -17,7 +16,7 @@ func _ready() -> void:
 func load_text(path: String, number_lines: int) -> void:
 	text_file = FileAccess.open(path, FileAccess.READ)
 	show()
-	$DialogueText.txt = text_file.get_line()
+	$DialogueText.text = text_file.get_line()
 	counter = 1
 	num_lines = number_lines
 
@@ -29,6 +28,7 @@ func _close_text() -> void:
 	if text_file != null:
 		text_file.close()
 		text_file = null
+	emit_signal("dialogue_closed")
 
 
 func _on_talk_button_pressed() -> void:

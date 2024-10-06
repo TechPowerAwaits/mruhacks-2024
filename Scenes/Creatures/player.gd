@@ -26,6 +26,10 @@ func _ready() -> void:
 	set_player_state(player_state)
 
 
+func toggle_focus() -> void:
+	$Camera2D.enabled = not $Camera2D.enabled
+
+
 func _enforce_bounds():
 	if position.x > _max_bounds.x:
 		position.x = _max_bounds.x

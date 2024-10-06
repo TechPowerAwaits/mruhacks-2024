@@ -3,6 +3,7 @@
 [ext_resource type="Script" path="res://Scenes/DialogueBox.gd" id="1_0ii2g"]
 
 [node name="DialogueBox" type="Panel"]
+z_index = 100
 offset_left = 102.0
 offset_top = 448.0
 offset_right = 1552.0

@@ -15,11 +15,19 @@ run/main_scene="res://Scenes/Menu.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
+
 [display]
 
 window/size/viewport_width=1632
 window/size/viewport_height=896
 window/size/resizable=false
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
 
 [rendering]
 

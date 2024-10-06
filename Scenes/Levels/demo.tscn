@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=4 uid="uid://dbpd4diawgdyq"]
+[gd_scene load_steps=10 format=4 uid="uid://dbpd4diawgdyq"]
 
 [ext_resource type="Texture2D" uid="uid://4k7ntidtnscm" path="res://Assets/Level1/L1_Tile.png" id="1_pmov1"]
 [ext_resource type="PackedScene" uid="uid://bkek5qjnwv34y" path="res://Scenes/Creatures/Player.tscn" id="1_wnhto"]
@@ -6,7 +6,6 @@
 [ext_resource type="Script" path="res://Scenes/Levels/demo.gd" id="3_3vj81"]
 [ext_resource type="PackedScene" uid="uid://cjxap77btrhgq" path="res://Scenes/Collectible.tscn" id="5_0k461"]
 [ext_resource type="Script" path="res://Scenes/CollectibleManager.gd" id="5_b407t"]
-[ext_resource type="PackedScene" uid="uid://bf5ftnmw6p4gi" path="res://Scenes/Creatures/NPC.tscn" id="7_nivda"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_x1l06"]
 texture = ExtResource("1_pmov1")
@@ -35,9 +34,6 @@ script = ExtResource("5_b407t")
 
 [node name="Collectible" parent="CollectibleManager" instance=ExtResource("5_0k461")]
 position = Vector2(0, 69)
-
-[node name="Npc" parent="." instance=ExtResource("7_nivda")]
-position = Vector2(25, 71)
 
 [connection signal="all_collected" from="CollectibleManager" to="." method="_on_collectible_manager_all_collected"]
 [connection signal="collected" from="CollectibleManager" to="." method="_on_collectible_manager_collected"]

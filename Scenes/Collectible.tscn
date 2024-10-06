@@ -1,4 +1,18 @@
-[gd_scene load_steps=3 format=3 uid="uid://cjxap77btrhgq"]
+[gd_scene load_steps=7 format=3 uid="uid://cjxap77btrhgq"]
+
+[ext_resource type="Texture2D" uid="uid://dj1cd2bw41s4p" path="res://Assets/Collectibles/map1_collectibles_animated.png" id="1_aig02"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7ifeo"]
+atlas = ExtResource("1_aig02")
+region = Rect2(0, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yywqo"]
+atlas = ExtResource("1_aig02")
+region = Rect2(16, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_niy2p"]
+atlas = ExtResource("1_aig02")
+region = Rect2(32, 48, 16, 16)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_85ili"]
 animations = [{
@@ -77,7 +91,16 @@ animations = [{
 "name": &"trophy",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7ifeo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yywqo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_niy2p")
+}],
 "loop": true,
 "name": &"water bottle",
 "speed": 5.0
@@ -94,5 +117,5 @@ animation = &"water bottle"
 centered = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(8, 10)
+position = Vector2(8, 8)
 shape = SubResource("RectangleShape2D_45ahq")

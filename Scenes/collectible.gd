@@ -21,5 +21,9 @@ func set_type(value: String) -> void:
 	$AnimatedSprite2D.play(value)
 
 
-func _on_body_entered(body: Node2D) -> void:
-	pass # Replace with function body.
+func _on_body_entered(_body: Node2D) -> void:
+	emit_signal("collected", type)
+
+
+func _on_collected(_type: Variant) -> void:
+	queue_free()

@@ -1,18 +1,42 @@
-[gd_scene load_steps=4 format=3 uid="uid://bkek5qjnwv34y"]
+[gd_scene load_steps=7 format=3 uid="uid://bkek5qjnwv34y"]
 
 [ext_resource type="Script" path="res://Scenes/Creatures/player.gd" id="1_tcq4l"]
-[ext_resource type="Texture2D" uid="uid://buiabsch34pc7" path="res://Assets/Level1/Player.png" id="1_vnjdq"]
+[ext_resource type="Texture2D" uid="uid://dpxegcjqwoh4c" path="res://Assets/Level1/spritewalking.png" id="2_6c0dt"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_0dv3l"]
-size = Vector2(16, 16)
+[sub_resource type="AtlasTexture" id="AtlasTexture_82o2f"]
+atlas = ExtResource("2_6c0dt")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8b53i"]
+atlas = ExtResource("2_6c0dt")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_iqecn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_82o2f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8b53i")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_yxine"]
+radius = 6.0
+height = 16.0
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_tcq4l")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_vnjdq")
-centered = false
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -8)
+sprite_frames = SubResource("SpriteFrames_iqecn")
+frame_progress = 0.0391297
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(9, 9)
-shape = SubResource("RectangleShape2D_0dv3l")
+position = Vector2(0, -8)
+shape = SubResource("CapsuleShape2D_yxine")

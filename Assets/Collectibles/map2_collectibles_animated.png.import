@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ctmwvga60ixcv"
-path="res://.godot/imported/toilet.png-e5aaad1d4d0d91fd26c2cc2bb8f8bb39.ctex"
+uid="uid://c02kv71n23hym"
+path="res://.godot/imported/map2_collectibles_animated.png-49da14791eb679d8d7f0e1229b71c216.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://toilet.png"
-dest_files=["res://.godot/imported/toilet.png-e5aaad1d4d0d91fd26c2cc2bb8f8bb39.ctex"]
+source_file="res://Assets/Collectibles/map2_collectibles_animated.png"
+dest_files=["res://.godot/imported/map2_collectibles_animated.png-49da14791eb679d8d7f0e1229b71c216.ctex"]
 
 [params]
 

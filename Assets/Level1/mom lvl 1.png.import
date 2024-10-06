@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dk2iq7fp2jgbh"
-path="res://.godot/imported/sinkbath.png-8339bd9e8ed20f13575c88d018e5f3f1.ctex"
+uid="uid://d1237e38jvqac"
+path="res://.godot/imported/mom lvl 1.png-801e708b59e496c36bf4c76b9a7286b4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sinkbath.png"
-dest_files=["res://.godot/imported/sinkbath.png-8339bd9e8ed20f13575c88d018e5f3f1.ctex"]
+source_file="res://Assets/Level1/mom lvl 1.png"
+dest_files=["res://.godot/imported/mom lvl 1.png-801e708b59e496c36bf4c76b9a7286b4.ctex"]
 
 [params]
 

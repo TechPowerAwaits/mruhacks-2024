@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c6g704tapi2t2"
-path="res://.godot/imported/bath wall lvl 1 locked.png-ce94bd4ef0defd068486c56b586343c8.ctex"
+uid="uid://dpxegcjqwoh4c"
+path="res://.godot/imported/spritewalking.png-8181fc91103f5e508aa4a38fff34ca43.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://bath wall lvl 1 locked.png"
-dest_files=["res://.godot/imported/bath wall lvl 1 locked.png-ce94bd4ef0defd068486c56b586343c8.ctex"]
+source_file="res://Assets/Level1/spritewalking.png"
+dest_files=["res://.godot/imported/spritewalking.png-8181fc91103f5e508aa4a38fff34ca43.ctex"]
 
 [params]
 

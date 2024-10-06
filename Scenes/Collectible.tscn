@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=3 uid="uid://cjxap77btrhgq"]
+[gd_scene load_steps=43 format=3 uid="uid://cjxap77btrhgq"]
 
 [ext_resource type="Texture2D" uid="uid://ke5hvhiyuajr" path="res://Assets/Collectibles/map1_collectibles_animated.png" id="1_aig02"]
 [ext_resource type="Script" path="res://Scenes/collectible.gd" id="1_l1n1e"]
@@ -40,6 +40,18 @@ region = Rect2(16, 16, 16, 16)
 [sub_resource type="AtlasTexture" id="AtlasTexture_v4a52"]
 atlas = ExtResource("1_aig02")
 region = Rect2(32, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_duc86"]
+atlas = ExtResource("4_agqs7")
+region = Rect2(0, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_18nif"]
+atlas = ExtResource("4_agqs7")
+region = Rect2(16, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_71msp"]
+atlas = ExtResource("4_agqs7")
+region = Rect2(32, 32, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_blrlx"]
 atlas = ExtResource("1_aig02")
@@ -191,7 +203,16 @@ animations = [{
 "name": &"clock",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_duc86")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_18nif")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_71msp")
+}],
 "loop": true,
 "name": &"coffee",
 "speed": 5.0
@@ -327,7 +348,7 @@ script = ExtResource("1_l1n1e")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_85ili")
-animation = &"money"
+animation = &"coffee"
 centered = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

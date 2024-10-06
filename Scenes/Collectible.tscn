@@ -1,6 +1,18 @@
-[gd_scene load_steps=7 format=3 uid="uid://cjxap77btrhgq"]
+[gd_scene load_steps=10 format=3 uid="uid://cjxap77btrhgq"]
 
 [ext_resource type="Texture2D" uid="uid://dj1cd2bw41s4p" path="res://Assets/Collectibles/map1_collectibles_animated.png" id="1_aig02"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h1xx6"]
+atlas = ExtResource("1_aig02")
+region = Rect2(0, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5dusw"]
+atlas = ExtResource("1_aig02")
+region = Rect2(16, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v4a52"]
+atlas = ExtResource("1_aig02")
+region = Rect2(32, 16, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7ifeo"]
 atlas = ExtResource("1_aig02")
@@ -26,7 +38,16 @@ animations = [{
 "name": &"books",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h1xx6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5dusw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v4a52")
+}],
 "loop": true,
 "name": &"broom",
 "speed": 5.0
@@ -113,7 +134,7 @@ size = Vector2(16, 16)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_85ili")
-animation = &"water bottle"
+animation = &"broom"
 centered = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

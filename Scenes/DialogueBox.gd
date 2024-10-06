@@ -3,7 +3,6 @@ extends Node
 #@onready var game_manager = get_node("")
 #@onready var dialogue_text = get_node("DialogueText")
 @onready var dialogue_text = "Help me."
-@onready var talk_input = get_node("PlayerTalkInput")
 @onready var talk_button = get_node("TalkButton")
 @onready var leave_button = get_node("LeaveButton")
 @onready var counter = 1
@@ -24,7 +23,3 @@ func _on_talk_button_pressed() -> void:
 	
 func _on_leave_button_pressed() -> void:
 	get_tree().quit()
-
-func _on_npc_talk(npc_dialogue):
-	talk_button.disabled = talk_input
-	pass

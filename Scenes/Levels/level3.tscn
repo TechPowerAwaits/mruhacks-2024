@@ -1,9 +1,12 @@
 [gd_scene load_steps=20 format=4 uid="uid://dyssnwv76p1hk"]
 
 [ext_resource type="Texture2D" uid="uid://d0amyssi8w27m" path="res://Assets/Level 2/sprite_sheet_lvl_2_cmp.png" id="1_02rjt"]
+<<<<<<< HEAD
+=======
 
 [ext_resource type="PackedScene" uid="uid://b8nrf70dw4qw2" path="res://Scenes/DialogueBox.tscn" id="1_bevls"]
 [ext_resource type="Script" path="res://Scenes/Levels/level_3.gd" id="1_cxft2"]
+>>>>>>> d1355c9b695ac4f72ed16182206a2082da65000e
 [ext_resource type="Texture2D" uid="uid://c3khhpiklbq0g" path="res://Assets/Level1/Demo Brick.png" id="2_qblvd"]
 [ext_resource type="Texture2D" uid="uid://c327ckarsqwyy" path="res://Assets/Level1/sprite_sheet_lvl_1_cmp.png" id="3_0655g"]
 [ext_resource type="Texture2D" uid="uid://mtdqfq8qkn45" path="res://Assets/Level1/sprite_parents.png" id="4_oamby"]

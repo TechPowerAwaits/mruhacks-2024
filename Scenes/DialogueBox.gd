@@ -1,5 +1,7 @@
 extends Panel
 
+# We know that dialogue_closed is unused within script.
+@warning_ignore("UNUSED_SIGNAL")
 signal dialogue_closed
 
 var text_file: FileAccess = null

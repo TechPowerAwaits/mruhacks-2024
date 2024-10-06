@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://bf5ftnmw6p4gi"]
+
+[ext_resource type="Script" path="res://Scenes/Creatures/npc.gd" id="1_okyto"]
+[ext_resource type="Texture2D" uid="uid://d1237e38jvqac" path="res://Assets/Level1/mom lvl 1.png" id="1_wo5hh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tbty7"]
+size = Vector2(15, 18)
+
+[node name="Npc" type="StaticBody2D"]
+script = ExtResource("1_okyto")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_wo5hh")
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(7.5, 9)
+shape = SubResource("RectangleShape2D_tbty7")

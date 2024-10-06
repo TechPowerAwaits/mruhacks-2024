@@ -71,6 +71,11 @@ func _physics_process(_delta: float) -> void:
 	if not _disabled:
 		_enforce_bounds()
 		_move()
+		var collision_info := get_last_slide_collision()
+		if collision_info != null:
+			var collider := collision_info.get_collider()
+			if collider is NPC:
+				print("Hi NPC")
 
 
 func set_bounds(min_pos: Vector2, max_pos: Vector2) -> void:

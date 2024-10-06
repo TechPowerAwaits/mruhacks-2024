@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=3 uid="uid://cjxap77btrhgq"]
+[gd_scene load_steps=32 format=3 uid="uid://cjxap77btrhgq"]
 
 [ext_resource type="Texture2D" uid="uid://dj1cd2bw41s4p" path="res://Assets/Collectibles/map1_collectibles_animated.png" id="1_aig02"]
 [ext_resource type="Texture2D" uid="uid://dvqtulk2q6xrc" path="res://Assets/Collectibles/map2_collectibles_animated.png" id="2_tgnu8"]
@@ -50,6 +50,18 @@ region = Rect2(16, 32, 16, 16)
 [sub_resource type="AtlasTexture" id="AtlasTexture_qa31a"]
 atlas = ExtResource("1_aig02")
 region = Rect2(32, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ydiaf"]
+atlas = ExtResource("2_tgnu8")
+region = Rect2(0, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4xjjk"]
+atlas = ExtResource("2_tgnu8")
+region = Rect2(16, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pn7o7"]
+atlas = ExtResource("2_tgnu8")
+region = Rect2(32, 16, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_uxs8o"]
 atlas = ExtResource("2_tgnu8")
@@ -172,7 +184,16 @@ animations = [{
 "name": &"deodorant",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ydiaf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4xjjk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pn7o7")
+}],
 "loop": true,
 "name": &"diploma",
 "speed": 5.0
@@ -261,7 +282,7 @@ size = Vector2(16, 16)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_85ili")
-animation = &"pencil"
+animation = &"diploma"
 centered = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

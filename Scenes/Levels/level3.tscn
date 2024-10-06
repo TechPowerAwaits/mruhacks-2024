@@ -1,6 +1,7 @@
 [gd_scene load_steps=20 format=4 uid="uid://dyssnwv76p1hk"]
 
 [ext_resource type="Texture2D" uid="uid://d0amyssi8w27m" path="res://Assets/Level 2/sprite_sheet_lvl_2_cmp.png" id="1_02rjt"]
+
 [ext_resource type="PackedScene" uid="uid://b8nrf70dw4qw2" path="res://Scenes/DialogueBox.tscn" id="1_bevls"]
 [ext_resource type="Script" path="res://Scenes/Levels/level_3.gd" id="1_cxft2"]
 [ext_resource type="Texture2D" uid="uid://c3khhpiklbq0g" path="res://Assets/Level1/Demo Brick.png" id="2_qblvd"]
@@ -9,6 +10,8 @@
 [ext_resource type="Texture2D" uid="uid://ke5hvhiyuajr" path="res://Assets/Collectibles/map1_collectibles_animated.png" id="5_5axr2"]
 [ext_resource type="Texture2D" uid="uid://cyw0chxbexfb7" path="res://Assets/Level1/lvl 1 darkwood floor.png" id="6_a3l5o"]
 [ext_resource type="Texture2D" uid="uid://cncvht7wwuyd8" path="res://Assets/Level 3/sprite_sheet_lvl_3_cmp.png" id="7_v6225"]
+[ext_resource type="Script" path="res://Scenes/Levels/level_1.gd" id="7_xe1xn"]
+
 [ext_resource type="PackedScene" uid="uid://bkek5qjnwv34y" path="res://Scenes/Creatures/Player.tscn" id="8_or2hn"]
 [ext_resource type="Script" path="res://Scenes/CollectibleManager.gd" id="9_vh3ur"]
 

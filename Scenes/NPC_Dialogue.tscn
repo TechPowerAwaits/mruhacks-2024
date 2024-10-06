@@ -1,0 +1,37 @@
+[gd_scene load_steps=2 format=3 uid="uid://bc3t37wayrlh"]
+
+[ext_resource type="Script" path="res://Scenes/npc_dialogue.gd" id="1_ukmfw"]
+
+[node name="DialogueBox" type="Panel"]
+z_index = 100
+offset_left = 102.0
+offset_top = 448.0
+offset_right = 1552.0
+offset_bottom = 768.0
+script = ExtResource("1_ukmfw")
+
+[node name="DialogueText" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.875
+offset_left = 98.0
+offset_top = 56.0
+offset_right = -128.0
+offset_bottom = -59.125
+theme_override_font_sizes/normal_font_size = 50
+text = "Here is where the NPC dialogue would go."
+
+[node name="DoneButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.006
+anchor_bottom = 0.983
+offset_left = 539.0
+offset_top = 207.0
+offset_right = -743.7
+offset_bottom = 4.828
+theme_override_font_sizes/font_size = 50
+text = "Done"
+
+[connection signal="pressed" from="DoneButton" to="." method="_on_done_button_pressed"]

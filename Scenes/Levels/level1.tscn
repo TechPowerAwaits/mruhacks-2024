@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=4 uid="uid://dg2i5wcf6i1th"]
+[gd_scene load_steps=16 format=4 uid="uid://dg2i5wcf6i1th"]
 
 
 [ext_resource type="Texture2D" uid="uid://c3khhpiklbq0g" path="res://Assets/Level1/Demo Brick.png" id="2_gyo5g"]
@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://cjxap77btrhgq" path="res://Scenes/Collectible.tscn" id="7_y74e3"]
 [ext_resource type="Script" path="res://Scenes/CollectibleManager.gd" id="9_vu7p1"]
 [ext_resource type="PackedScene" uid="uid://b8nrf70dw4qw2" path="res://Scenes/DialogueBox.tscn" id="10_3dfhg"]
+[ext_resource type="PackedScene" uid="uid://bc3t37wayrlh" path="res://Scenes/NPC_Dialogue.tscn" id="10_28gp8"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_phft4"]
 texture = ExtResource("3_fw00s")
@@ -149,6 +150,9 @@ offset_left = 3.0
 offset_top = -27.0
 offset_right = 1453.0
 offset_bottom = 388.0
+
+[node name="NPCDialogue" parent="." instance=ExtResource("10_28gp8")]
+layout_mode = 0
 
 [node name="Level1" type="TileMapLayer" parent="."]
 position = Vector2(1, 17)

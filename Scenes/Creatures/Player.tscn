@@ -21,7 +21,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_8b53i")
 }],
 "loop": true,
-"name": &"default",
+"name": &"level1",
 "speed": 2.0
 }]
 
@@ -33,10 +33,11 @@ height = 16.0
 script = ExtResource("1_tcq4l")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(0, -8)
+position = Vector2(-2, -1)
 sprite_frames = SubResource("SpriteFrames_iqecn")
-frame_progress = 0.0391297
+animation = &"level1"
+centered = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -8)
+position = Vector2(6, 8)
 shape = SubResource("CapsuleShape2D_yxine")

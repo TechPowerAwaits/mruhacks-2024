@@ -62,9 +62,7 @@ func set_bounds(min_pos: Vector2, max_pos: Vector2) -> void:
 func set_player_state(value: PlayerType) -> void:
 	match value:
 		PlayerType.LEVEL1:
-			$Sprite2D.texture = L1_IMAGE
-		_:
-			$Sprite2D.texture = FALLBACK_IMAGE
+			$AnimatedSprite2D.play("level1")
 	player_state = value
 
 

@@ -179,6 +179,8 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("1_ej2n5")
+min_pos = Vector2(-64, -32)
+max_pos = Vector2(2000, 2000)
 
 [node name="DialogueBox" parent="." instance=ExtResource("2_woki2")]
 layout_mode = 0

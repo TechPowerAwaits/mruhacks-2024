@@ -1,5 +1,4 @@
-
-[gd_scene load_steps=17 format=4 uid="uid://dg2i5wcf6i1th"]
+[gd_scene load_steps=15 format=4 uid="uid://dg2i5wcf6i1th"]
 
 [ext_resource type="Texture2D" uid="uid://c3khhpiklbq0g" path="res://Assets/Level1/Demo Brick.png" id="2_gyo5g"]
 [ext_resource type="Texture2D" uid="uid://c327ckarsqwyy" path="res://Assets/Level1/sprite_sheet_lvl_1_cmp.png" id="3_aq3i2"]

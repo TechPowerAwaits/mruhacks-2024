@@ -13,6 +13,7 @@ var items_collected := false
 
 
 func _ready() -> void:
+	$Level1/Player.set_player_state(Player.PlayerType.LEVEL1)
 	$Level1.hide()
 	$Level1/Player.set_bounds(min_pos, max_pos)
 	$Level1/Player.disable()

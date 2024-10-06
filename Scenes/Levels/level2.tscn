@@ -213,7 +213,7 @@ tile_set = SubResource("TileSet_jrhff")
 
 [node name="Player" parent="Level2" instance=ExtResource("1_ti41k")]
 position = Vector2(93, 63)
-player_state = 1
+player_state = 2
 
 [node name="CollectibleManager" type="Node" parent="Level2"]
 script = ExtResource("7_gisdp")

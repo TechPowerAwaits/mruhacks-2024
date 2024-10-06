@@ -159,4 +159,4 @@ position = Vector2(224, 256)
 type = "backpack"
 
 [connection signal="dialogue_closed" from="DialogueBox" to="." method="_on_dialogue_box_dialogue_closed"]
-[connection signal="all_collected" from="Level1/CollectibleManager" to="Level1" method="_on_collectible_manager_all_collected"]
+[connection signal="all_collected" from="Level1/CollectibleManager" to="." method="_on_collectible_manager_all_collected"]

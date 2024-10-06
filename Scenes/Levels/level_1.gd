@@ -10,7 +10,7 @@ const INTRO_FILE := "res://IntroDialogue1.txt"
 func _ready() -> void:
 	$Level1.hide()
 	$Level1/Player.set_bounds(min_pos, max_pos)
-	$Level1/Player.toggle_focus()
+	$Level1/Player.disable()
 	$DialogueBox.load_text(INTRO_FILE, INTRO_LINES)
 
 
@@ -19,5 +19,5 @@ func _on_collectible_manager_all_collected() -> void:
 
 
 func _on_dialogue_box_dialogue_closed() -> void:
-	$Level1/Player.toggle_focus()
+	$Level1/Player.enable()
 	$Level1.show()

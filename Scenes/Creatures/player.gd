@@ -4,6 +4,7 @@ extends CharacterBody2D
 const L1_IMAGE: Texture = preload("res://Assets/Level1/player_lvl_1.png")
 const FALLBACK_IMAGE: Texture = preload("res://Assets/Level1/Player.png")
 
+var _disabled := false
 var _min_bounds := Vector2.ZERO
 var _max_bounds := Vector2.ZERO
 
@@ -26,8 +27,14 @@ func _ready() -> void:
 	set_player_state(player_state)
 
 
-func toggle_focus() -> void:
-	$Camera2D.enabled = not $Camera2D.enabled
+func disable() -> void:
+	$Camera2D.enabled = false
+	_disabled = true
+
+
+func enable() -> void:
+	$Camera2D.enabled = true
+	_disabled = false
 
 
 func _enforce_bounds():
@@ -61,8 +68,9 @@ func _move() -> void:
 
 
 func _physics_process(_delta: float) -> void:
-	_enforce_bounds()
-	_move()
+	if not _disabled:
+		_enforce_bounds()
+		_move()
 
 
 func set_bounds(min_pos: Vector2, max_pos: Vector2) -> void:

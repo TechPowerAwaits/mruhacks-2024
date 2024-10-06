@@ -1,4 +1,4 @@
-[gd_scene load_steps=52 format=3 uid="uid://cjxap77btrhgq"]
+[gd_scene load_steps=55 format=3 uid="uid://cjxap77btrhgq"]
 
 [ext_resource type="Texture2D" uid="uid://ke5hvhiyuajr" path="res://Assets/Collectibles/map1_collectibles_animated.png" id="1_aig02"]
 [ext_resource type="Script" path="res://Scenes/collectible.gd" id="1_l1n1e"]
@@ -172,6 +172,18 @@ region = Rect2(16, 64, 16, 16)
 [sub_resource type="AtlasTexture" id="AtlasTexture_goqdt"]
 atlas = ExtResource("2_tgnu8")
 region = Rect2(32, 64, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0ujle"]
+atlas = ExtResource("4_agqs7")
+region = Rect2(0, 96, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iyl2o"]
+atlas = ExtResource("4_agqs7")
+region = Rect2(16, 96, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wdkcm"]
+atlas = ExtResource("4_agqs7")
+region = Rect2(32, 96, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7ifeo"]
 atlas = ExtResource("1_aig02")
@@ -383,7 +395,16 @@ animations = [{
 "name": &"pencil",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0ujle")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iyl2o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wdkcm")
+}],
 "loop": true,
 "name": &"trophy",
 "speed": 5.0
@@ -411,7 +432,7 @@ script = ExtResource("1_l1n1e")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_85ili")
-animation = &"fishbowl"
+animation = &"trophy"
 centered = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

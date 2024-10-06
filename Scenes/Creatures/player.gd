@@ -26,7 +26,7 @@ func _ready() -> void:
 	set_player_state(player_state)
 
 
-func _physics_process(_delta: float) -> void:
+func _enforce_bounds():
 	if position.x > _max_bounds.x:
 		position.x = _max_bounds.x
 	elif position.x < _min_bounds.x:
@@ -37,6 +37,8 @@ func _physics_process(_delta: float) -> void:
 	elif position.y < _min_bounds.y:
 		position.y = _min_bounds.y
 
+
+func _move() -> void:
 	var x_modifier := 0
 	var y_modifier := 0
 	
@@ -52,6 +54,11 @@ func _physics_process(_delta: float) -> void:
 	velocity.x = x_modifier
 	velocity.y = y_modifier
 	move_and_slide()
+
+
+func _physics_process(_delta: float) -> void:
+	_enforce_bounds()
+	_move()
 
 
 func set_bounds(min_pos: Vector2, max_pos: Vector2) -> void:

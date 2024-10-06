@@ -1,3 +1,4 @@
+class_name Collectible
 extends Area2D
 
 signal collected(type)
@@ -10,6 +11,8 @@ signal collected(type)
 func _ready() -> void:
 	# Ensure that the collectible sprite represents its state.
 	set_type(type)
+	
+	collected.connect(_on_collected)
 
 
 func get_type() -> String:

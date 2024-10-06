@@ -3,7 +3,7 @@ extends Control
 const INTRO_LINES := 4
 const INTRO_FILE := "res://IntroDialogue1.txt"
 
-const OUTRO_LINES := 2
+const OUTRO_LINES := 3
 const OUTRO_FILE := "res://OutroDialogue1.txt"
 
 @export var min_pos := Vector2.ZERO

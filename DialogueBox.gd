@@ -26,6 +26,5 @@ func _on_leave_button_pressed() -> void:
 	get_tree().quit()
 
 func _on_npc_talk(npc_dialogue):
-	dialogue_text = npc_dialogue
 	talk_button.disabled = talk_input
 	pass

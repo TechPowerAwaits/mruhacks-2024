@@ -1,6 +1,7 @@
-[gd_scene load_steps=16 format=3 uid="uid://cjxap77btrhgq"]
+[gd_scene load_steps=20 format=3 uid="uid://cjxap77btrhgq"]
 
 [ext_resource type="Texture2D" uid="uid://dj1cd2bw41s4p" path="res://Assets/Collectibles/map1_collectibles_animated.png" id="1_aig02"]
+[ext_resource type="Texture2D" uid="uid://dvqtulk2q6xrc" path="res://Assets/Collectibles/map2_collectibles_animated.png" id="2_tgnu8"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0haxo"]
 atlas = ExtResource("1_aig02")
@@ -37,6 +38,18 @@ region = Rect2(16, 32, 16, 16)
 [sub_resource type="AtlasTexture" id="AtlasTexture_qa31a"]
 atlas = ExtResource("1_aig02")
 region = Rect2(32, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_08vcn"]
+atlas = ExtResource("2_tgnu8")
+region = Rect2(0, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gpbkh"]
+atlas = ExtResource("2_tgnu8")
+region = Rect2(16, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qxch2"]
+atlas = ExtResource("2_tgnu8")
+region = Rect2(32, 48, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7ifeo"]
 atlas = ExtResource("1_aig02")
@@ -139,7 +152,16 @@ animations = [{
 "name": &"money",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_08vcn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gpbkh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qxch2")
+}],
 "loop": true,
 "name": &"paper",
 "speed": 5.0
@@ -176,7 +198,7 @@ size = Vector2(16, 16)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_85ili")
-animation = &"backpack"
+animation = &"paper"
 centered = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

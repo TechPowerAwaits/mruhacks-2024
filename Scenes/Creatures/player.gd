@@ -1,3 +1,4 @@
+class_name Player
 extends CharacterBody2D
 
 const L1_IMAGE: Texture = preload("res://Assets/Level1/player_lvl_1.png")

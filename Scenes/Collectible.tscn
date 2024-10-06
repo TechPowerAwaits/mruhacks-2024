@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://cjxap77btrhgq"]
+[gd_scene load_steps=26 format=3 uid="uid://cjxap77btrhgq"]
 
 [ext_resource type="Texture2D" uid="uid://dj1cd2bw41s4p" path="res://Assets/Collectibles/map1_collectibles_animated.png" id="1_aig02"]
 [ext_resource type="Texture2D" uid="uid://dvqtulk2q6xrc" path="res://Assets/Collectibles/map2_collectibles_animated.png" id="2_tgnu8"]
@@ -13,6 +13,18 @@ region = Rect2(16, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1oli6"]
 atlas = ExtResource("1_aig02")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fun0l"]
+atlas = ExtResource("2_tgnu8")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_51lir"]
+atlas = ExtResource("2_tgnu8")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1e8fi"]
+atlas = ExtResource("2_tgnu8")
 region = Rect2(32, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_h1xx6"]
@@ -91,9 +103,18 @@ animations = [{
 "name": &"backpack",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fun0l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_51lir")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1e8fi")
+}],
 "loop": true,
-"name": &"books",
+"name": &"book",
 "speed": 5.0
 }, {
 "frames": [{
@@ -219,7 +240,7 @@ size = Vector2(16, 16)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_85ili")
-animation = &"laptop"
+animation = &"book"
 centered = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
